@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust"></a>
-  <a href="https://github.com/anomalyco/rune"><img src="https://img.shields.io/badge/Rune-UI-242424" alt="Rune"></a>
+  <a href="https://github.com/anomalyco/rune"><img src="https://img.shields.io/badge/Rune-242424" alt="Rune"></a>
   <img src="https://img.shields.io/badge/status-experimental-blueviolet" alt="Experimental">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT">
 </p>
