@@ -1,0 +1,17 @@
+[package]
+name = "pulse-pomo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rune = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+
+[patch.crates-io]
+parley_engine = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+winit = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+sctk-adwaita = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+wgpu-hal = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+naga = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+accesskit_windows = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+accesskit_macos = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
+accesskit_atspi_common = { git = "https://github.com/anomalyco/rune", rev = "df2e20e81fe3c0c5892f0ea37982dd44beb10bfb" }
