@@ -9,6 +9,8 @@ use state::{State, initial_state};
 mod timer;
 use timer::poll;
 
+mod icons;
+
 mod components;
 use components::{timer_controls, timer_display};
 
