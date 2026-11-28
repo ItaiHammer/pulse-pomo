@@ -4,11 +4,13 @@ use rune::{El, Icon, Tx, row};
 use crate::components::button::{icon_button, text_button};
 use crate::icons::{PAUSE_ICON, PLAY_ICON, RESET_ICON, SKIP_ICON};
 use crate::state::State;
-use crate::timer::{pause_timer, reset_timer, start_timer};
+use crate::timer::{add_minute, pause_timer, reset_timer, start_timer};
 
 pub fn timer_controls(s: &State) -> El {
     // +1 min button
-    let add_minute_button = text_button(&s.theme, "+1m", None);
+    let add_minute_button = text_button(&s.theme, "+1m", None).on_press(|s: &mut State| {
+        add_minute(s);
+    });
 
     // start/pause button
     let toggle_icon: &'static Icon = if s.is_running {

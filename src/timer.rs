@@ -61,3 +61,9 @@ pub fn reset_timer(s: &mut State) {
         None
     };
 }
+
+pub fn add_minute(s: &mut State) {
+    let seconds_to_add: u16 = ((60 * 60) - s.remaining_seconds).min(60); // can't go more than an hour (60 secs * 60 min)
+    s.remaining_seconds += seconds_to_add;
+    s.starting_seconds += seconds_to_add;
+}
